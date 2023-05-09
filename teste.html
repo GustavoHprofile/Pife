@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial CSS efeito carta de baralho - card effect - flip animation</title>
+
+<style type="text/css">
+	.carta-container{
+		perspective:1100; /*Esta propriedade especifica quantos pixels serão usados para renderização do giro 3D*/
+		-webkit-perspective: 1100; /* Chrome, Safari, Opera */
+		float:left;
+		margin:2px;
+		}
+	.carta{
+		position:relative;
+		width:200px;
+		height:200px;
+		color:#CF0;
+		text-align:center;
+		line-height:200px;
+		margin:5px;
+		transition:all 0.6s ease;
+		transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+		
+		}
+	
+	.carta:hover{
+		transform:rotateY(180deg);
+		-webkit-transform: rotateY(180deg); /* Chrome, Safari, Opera */ /*Esta propriedade serve para preservar a posição 3D do elemento descendente*/
+		}
+		
+		
+	.verso{
+		transform:rotateY(180deg);
+		-webkit-transform: rotateY(180deg); /* Chrome, Safari, Opera */
+	}
+	
+	.frente, .verso{
+		position:absolute;
+		top:0;
+		left:0;
+		width:200px;
+		height:200px;
+		background-color:#00F;
+		backface-visibility:hidden; /*Essa propriedade faz com que a parte oposta da carta não seja mostrada, caso contrário veria as duas faces, uma justaposta a outra*/
+		-webkit-backface-visibility:hidden; /* Chrome, Safari, Opera */
+		}
+	h1{
+		margin:0;
+		}
+</style>
+
+</head>
+
+<body>
+	
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>Div 1</h1>
+                </div>
+                <div class="verso">
+                    <img src="http://placekitten.com/200/200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>Div 2</h1>
+                </div>
+                <div class="verso">
+                    <img src="http://placekitten.com/200/200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>Div 3</h1>
+                </div>
+                <div class="verso">
+                    <img src="http://placekitten.com/200/200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>Div 4</h1>
+                </div>
+                <div class="verso">
+                    <img src="http://placekitten.com/200/200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>Div 5</h1>
+                </div>
+                <div class="verso">
+                    <img src="http://placekitten.com/200/200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>Div 6</h1>
+                </div>
+                <div class="verso">
+                    <img src="http://placekitten.com/200/200">
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>Div 7</h1>
+                </div>
+                <div class="verso">
+                    <img src="http://placekitten.com/200/200">
+                </div>
+            </div>
+        </div>
+    
+        
+    
+</body>
+</html>
