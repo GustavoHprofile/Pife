@@ -1,0 +1,163 @@
+body {
+	background-image: url("./imagens/background-alt.jpg");
+	background-repeat: repeat;
+	background-size: 250px 250px;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+	position: fixed;
+	right: 0px;
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background-color: #181920;
+}
+
+.login {
+	width: 230px;
+	height: 330px;
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.login form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.login input {
+	margin-top: 10px;
+	background-color: #252A34;
+	padding-left: 10px;
+	color: #ffffff;
+	border: none;
+	height: 45px;
+	outline: none;
+	border-radius: 8px;
+}
+
+.login img {
+	width: 120px;
+	height: auto;
+}
+
+.input::placeholder {
+	color: #ffffff;
+	font-size: 14px;
+}
+
+form [type="submit"] {
+	display: block;
+	background-color: #27814c;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+p {
+	color: #ffffff;
+}
+
+#criar-conta {
+	color: #27814c;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.carta {
+	border: 0px;
+	border-radius: 5px;
+}
+
+/*Barra de Navegação Lateral*/
+#nav-lateral {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	background: #181920;
+	width: 90px;
+	overflow: hidden;
+	transition: width 0.2s linear;
+	box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+#itens-navlateral {
+	margin: 0;
+	padding: 0;
+}
+
+#logo-navlateral {
+	display: flex;
+	text-align: center;
+	transition: all 0.5s ease;
+	margin: 10px 0 0 10px;
+}
+
+#logo-navlateral img {
+	width: 50px;
+	height: 50px;
+}
+
+#logo-navlateral span {
+	font-weight: bold;
+	padding-left: 10px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: heptal;
+	color: #FE0000;
+	text-shadow: -2px 2px #000;
+}
+
+.links-navlateral {
+	position: relative;
+	color: rgb(85, 83, 83);
+	font-size: 14px;
+	display: table;
+	width: 300px;
+	padding: 10px;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+}
+
+.fas {
+	position: relative;
+	width: 70px;
+	height: 40px;
+	top: 14px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.nav-item {
+	position: relative;
+	top: 12px;
+	margin-left: 10px;
+}
+
+.links-navlateral:hover {
+	background: #eee;
+}
+
+#nav-lateral:hover {
+	width: 280px;
+	transition: all 0.5s ease;
+}
+
+#logout {
+	position: absolute;
+	bottom: 0;
+}
+
+
